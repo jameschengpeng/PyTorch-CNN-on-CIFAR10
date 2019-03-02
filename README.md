@@ -1,2 +1,2 @@
 # PyTorch-CNN-on-CIFAR10
-This is a Deep Learning model based on PyTorch. We train it for image classification on CIFAR10.
+This model used convolutional neural network on CIFAR10 dataset. The structure of the model is: conv, conv, pool, dropout, conv, conv, pool, dropout, fully-connected, fully-connected, dropout, fully-connected. In order not to reduce the height and width of the pictures, I used padding in every convolutional layer. For the simplicity of fine-tuning the model, I print the loss after every epoch and test for accuracy after every five epochs. This program can load pretrained model if necessary. Actually, the test accuracy reach 80% after the 10th epoch. 
